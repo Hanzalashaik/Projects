@@ -11,7 +11,7 @@ function App() {
             <h1 className="text-3xl font-semibold ">Projects⚙️</h1>
             <ul className=" ml-4 mt-4 ">
               <div>
-                <li className="hover:underline text-2xl m-2 text-blue-700 font-medium  hover:text-red-600 hover:scale-105 hover:duration-500 hover:ease-out hover:ml-3 flex items-center"><FaCheck className="text-green-600 mr-2" /><a href="">Project Mngmt MERN App</a></li>
+                <li className="hover:underline text-2xl m-2 text-blue-700 font-medium  hover:text-red-600 hover:scale-105 hover:duration-500 hover:ease-out hover:ml-3 flex items-center"><FaCheck className="text-green-600 mr-2" /><a href="https://project.hanzala.site/">Project Mngmt MERN App</a></li>
                 <li className="hover:underline text-2xl m-2 text-blue-700 font-medium  hover:text-red-600 hover:scale-105 hover:duration-500 hover:ease-out hover:ml-3 flex items-center"><FaCheck className="text-green-600 mr-2" /><a href="https://todo.hanzala.site/">To-do MERN App</a></li>
                 <li className="hover:underline text-2xl m-2 text-blue-700 font-medium  hover:text-red-600 hover:scale-105 hover:duration-500 hover:ease-out hover:ml-3 flex items-center"><FaCheck className="text-green-600 mr-2" /><a href="https://react.hanzala.site/">React Essential App</a></li>
                 <li className="hover:underline text-2xl m-2 text-blue-700 font-medium  hover:text-red-600 hover:scale-105 hover:duration-500 hover:ease-out hover:ml-3 flex items-center"><FaCheck className="text-green-600 mr-2" /><a href="https://tictactoe.hanzala.site/">Tic Tac Toe Game</a></li>
