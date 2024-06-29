@@ -1,111 +1,141 @@
 import React from "react";
-import { FaCheck } from "react-icons/fa";
+import {
+  FaCheck,
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+  FaInstagram,
+  FaDownload,
+} from "react-icons/fa";
 
 function App() {
   return (
-    <div className="bg-bg3 bg-cover min-h-screen">
+    <div className="bg-amber-100 h-screen">
       <div className="container mx-auto p-5">
-        <div className="text-center">
+        <div className="text-center mb-10">
           <h1 className="text-4xl font-bold mb-2">Hanzala Shaikh ❤️</h1>
           <h2 className="text-2xl font-semibold mb-4">
             Full Stack Web Developer 👨‍💻
           </h2>
         </div>
 
-        <div>
-          <h1 className="text-3xl font-semibold mb-4">Projects ⚙️</h1>
-          <ul className=" ml-4">
-            <li className="project-item flex  items-center gap-3 p-2 text-xl font-semibold">
-              <FaCheck className="text-green-600 mr-2" />
+        <div className="flex justify-between">
+          <div className="w-2/3">
+            <h1 className="text-3xl font-semibold mb-4">Projects ⚙️</h1>
+            <ul className="ml-4">
+              {[
+                {
+                  href: "https://100daysofcoding.com/",
+                  text: "100days of coding",
+                  github:
+                    "https://github.com/Hanzalashaik/100DaysofCodingChallenge",
+                },
+                {
+                  href: "https://chatapp.hanzala.site/",
+                  text: "Chat App MERN",
+                  github: "https://github.com/Hanzalashaik/Real-Time-Chat-App",
+                },
+                {
+                  href: "https://project.hanzala.site/",
+                  text: "Project Mngmt MERN App",
+                  github:
+                    "https://github.com/Hanzalashaik/project-management-mern",
+                },
+                {
+                  href: "https://todo.hanzala.site/",
+                  text: "To-do MERN App",
+                  github: "https://github.com/Hanzalashaik/to-do-mern",
+                },
+                {
+                  href: "https://tictactoe.hanzala.site/",
+                  text: "Tic Tac Toe Game",
+                  github: "https://github.com/Hanzalashaik/Tic-Tac-Toe",
+                },
+                {
+                  href: "https://quizapp.hanzala.site/",
+                  text: "Quiz App",
+                  github: "https://github.com/Hanzalashaik/quiz-app",
+                },
+                {
+                  href: "https://videohub-hanzalashaikh.vercel.app/",
+                  text: "Video Hub",
+                  github: "https://github.com/Hanzalashaik/videohub",
+                },
+                {
+                  href: "https://reactoneproject-umber.vercel.app/",
+                  text: "Zone Demo App",
+                  github: "https://github.com/Hanzalashaik/react-project-1",
+                },
+              ].map((project, index) => (
+                <li
+                  key={index}
+                  className="project-item flex items-center gap-3 p-2 text-xl font-semibold"
+                >
+                  <FaCheck className="text-green-600 mr-2" />
+                  <a
+                    className="hover:scale-110 hover:duration-300 hover:text-blue-800 hover:underline"
+                    href={project.href}
+                  >
+                    {project.text}
+                  </a>
+                  <a
+                    className="hover:scale-110 hover:duration-300 hover:text-gray-800"
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="w-80 ">
+            <h1 className="text-3xl font-semibold mb-4">Connect with me 🌐</h1>
+            <div className="flex justify-center my-10  items-center gap-6">
               <a
-                className="hover:scale-110 hover:duration-300 hover:text-blue-800 hover:underline"
-                href="https://100daysofcoding.com/"
+                className="hover:scale-110 hover:duration-300 hover:text-blue-800"
+                href="https://www.linkedin.com/in/-hanzala-shaikh-/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                100daysofcoding
+                <FaLinkedin size={32} />
               </a>
-            </li>
-            <li className="project-item flex  items-center gap-3 p-2 text-xl font-semibold">
-              <FaCheck className="text-green-600 mr-2" />
               <a
-                className="hover:scale-110 hover:duration-300 hover:text-blue-800 hover:underline"
-                href="https://project.hanzala.site/"
+                className="hover:scale-110 hover:duration-300 hover:text-blue-800"
+                href="https://twitter.com/ShaikHanzala2"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Project Mngmt MERN App
+                <FaTwitter size={32} />
               </a>
-            </li>
-            <li className="project-item flex  items-center gap-3 p-2 text-xl font-semibold">
-              <FaCheck className="text-green-600 mr-2" />
               <a
-                className="hover:scale-110 hover:duration-300 hover:text-blue-800 hover:underline"
-                href="https://todo.hanzala.site/"
+                className="hover:scale-110 hover:duration-300 hover:text-pink-600"
+                href="https://www.instagram.com/hanzala.jsx/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                To-do MERN App
+                <FaInstagram size={32} />
               </a>
-            </li>
-            <li className="project-item flex  items-center gap-3 p-2 text-xl font-semibold">
-              <FaCheck className="text-green-600 mr-2" />
               <a
-                className="hover:scale-110 hover:duration-300 hover:text-blue-800 hover:underline"
-                href="https://react.hanzala.site/"
+                className="hover:scale-110 hover:duration-300 hover:text-gray-800"
+                href="https://github.com/Hanzalashaik"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                React Essential App
+                <FaGithub size={32} />
               </a>
-            </li>
-            <li className="project-item flex  items-center gap-3 p-2 text-xl font-semibold">
-              <FaCheck className="text-green-600 mr-2" />
-              <a
-                className="hover:scale-110 hover:duration-300 hover:text-blue-800 hover:underline"
-                href="https://tictactoe.hanzala.site/"
-              >
-                Tic Tac Toe Game
-              </a>
-            </li>
-            <li className="project-item flex  items-center gap-3 p-2 text-xl font-semibold">
-              <FaCheck className="text-green-600 mr-2" />
-              <a
-                className="hover:scale-110 hover:duration-300 hover:text-blue-800 hover:underline"
-                href="https://investment.hanzala.site/"
-              >
-                Investment App
-              </a>
-            </li>
-            <li className="project-item flex  items-center gap-3 p-2 text-xl font-semibold">
-              <FaCheck className="text-green-600 mr-2" />
-              <a
-                className="hover:scale-110 hover:duration-300 hover:text-blue-800 hover:underline"
-                href="https://countdown.hanzala.site/"
-              >
-                CoutDown Game
-              </a>
-            </li>
-            <li className="project-item flex  items-center gap-3 p-2 text-xl font-semibold">
-              <FaCheck className="text-green-600 mr-2" />
-              <a
-                className="hover:scale-110 hover:duration-300 hover:text-blue-800 hover:underline"
-                href="https://quizapp.hanzala.site/"
-              >
-                Quiz App
-              </a>
-            </li>
-            <li className="project-item flex  items-center gap-3 p-2 text-xl font-semibold">
-              <FaCheck className="text-green-600 mr-2" />
-              <a
-                className="hover:scale-110 hover:duration-300 hover:text-blue-800 hover:underline"
-                href="https://videohub-hanzalashaikh.vercel.app/"
-              >
-                Video Hub
-              </a>
-            </li>
-            <li className="project-item flex  items-center gap-3 p-2 text-xl font-semibold">
-              <FaCheck className="text-green-600 mr-2" />
-              <a
-                className="hover:scale-110 hover:duration-300 hover:text-blue-800 hover:underline"
-                href="https://reactoneproject-umber.vercel.app/"
-              >
-                Zone Demo App
-              </a>
-            </li>
-          </ul>
+            </div>
+            <a
+              className="mt-4 justify-center py-2 px-4 w-34 bg-blue-500 text-white font-semibold rounded hover:bg-blue-700 hover:scale-110 hover:duration-300 flex items-center gap-2"
+              href="./public/Hanzala_resume.pdf"
+              download="Hanzala_resume.pdf"
+            >
+              <FaDownload size={24} />
+              Download My Resume
+            </a>
+          </div>
         </div>
       </div>
     </div>
