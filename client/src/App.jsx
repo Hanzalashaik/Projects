@@ -10,7 +10,7 @@ import {
 
 function App() {
   return (
-    <div className="bg-amber-100 h-screen">
+    <div className="bg-bg3 bg-cover min-h-screen">
       <div className="container mx-auto p-5">
         <div className="text-center mb-10">
           <h1 className="text-4xl font-bold mb-2">Hanzala Shaikh ❤️</h1>
@@ -19,8 +19,8 @@ function App() {
           </h2>
         </div>
 
-        <div className="flex justify-between">
-          <div className="w-2/3">
+        <div className="flex flex-col md:flex-row justify-between">
+          <div className="w-full md:ml-24 md:w-2/3 mb-10 md:mb-0">
             <h1 className="text-3xl font-semibold mb-4">Projects ⚙️</h1>
             <ul className="ml-4">
               {[
@@ -91,9 +91,9 @@ function App() {
             </ul>
           </div>
 
-          <div className="w-80 ">
+          <div className="w-full md:w-1/3 md:mt-16">
             <h1 className="text-3xl font-semibold mb-4">Connect with me 🌐</h1>
-            <div className="flex justify-center my-10  items-center gap-6">
+            <div className="flex flex-wrap justify-center md:justify-start my-10 items-center gap-6">
               <a
                 className="hover:scale-110 hover:duration-300 hover:text-blue-800"
                 href="https://www.linkedin.com/in/-hanzala-shaikh-/"
@@ -127,14 +127,16 @@ function App() {
                 <FaGithub size={32} />
               </a>
             </div>
-            <a
-              className="mt-4 justify-center py-2 px-4 w-34 bg-blue-500 text-white font-semibold rounded hover:bg-blue-700 hover:scale-110 hover:duration-300 flex items-center gap-2"
-              href="./public/Hanzala_resume.pdf"
-              download="Hanzala_resume.pdf"
-            >
-              <FaDownload size={24} />
-              Download My Resume
-            </a>
+            <div className="flex justify-center md:justify-start">
+              <a
+                className="mt-4 py-2 px-4 bg-blue-500 text-white font-semibold rounded hover:bg-blue-700 hover:scale-110 hover:duration-300 flex items-center gap-2"
+                href="https://raw.githubusercontent.com/Hanzalashaik/Projects/main/client/public/Hanzala_resume.pdf"
+                download="Hanzala_resume.pdf"
+              >
+                <FaDownload size={24} />
+                Download My Resume
+              </a>
+            </div>
           </div>
         </div>
       </div>
